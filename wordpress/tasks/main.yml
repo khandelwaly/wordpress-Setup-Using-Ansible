@@ -1,0 +1,14 @@
+- name: Downloading Wordpress
+  unarchive:
+          src: https://wordpress.org/latest.tar.gz
+          dest: "/var/www/html"
+          remote_src: yes
+          creates: "/var/www/html/wordpress"
+- name: Replacing wp-config
+  copy:
+          src: wp-config.php
+          dest: /var/www/html/wordpress/wp-config.php
+- name: Reloading nginx
+  service:
+          name: nginx
+          state: reloaded

@@ -1,0 +1,11 @@
+- name: Installing nginx
+  apt:
+          name: nginx
+- name: Copying configuraion
+  copy:
+          src: word_config
+          dest: /etc/nginx/sites-available/default
+#- name: Restarting Nginx
+#  service:
+#          name: nginx
+#          state: reloaded

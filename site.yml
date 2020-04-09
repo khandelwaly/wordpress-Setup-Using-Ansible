@@ -1,0 +1,12 @@
+- name: Starting Wordpress Role
+  hosts: all
+  gather_facts: yes
+  become: true
+  roles:
+          - update
+          - python
+          - mysql
+          - php
+          - nginx
+          - wordpress
+          - ssh_keys

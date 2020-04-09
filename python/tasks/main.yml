@@ -1,0 +1,6 @@
+- name: Installing Python-pip
+  apt:
+          name: ['python-apt','python-pip','python3-pip']
+- name: Installing PyMySQL using pip for mysql
+  pip:
+          name: PyMySQL
