@@ -1,5 +1,21 @@
 ## Ansible Playbook to setup wordpress
 ---
+- site.yml
+```
+- name: Starting Wordpress Role
+  hosts: all
+  gather_facts: yes
+  become: true
+  roles:
+          - update
+          - python
+          - mysql
+          - php
+          - nginx
+          - wordpress
+          - ssh_keys
+```
+---
 - How to run
 ```
 ansible-playbook site.yml
