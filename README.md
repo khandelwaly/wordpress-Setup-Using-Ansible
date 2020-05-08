@@ -15,4 +15,4 @@ ansible-playbook site.yml
    - php
    - nginx
    - wordpress
-   - ssh_keys
+      - ssh_keys
