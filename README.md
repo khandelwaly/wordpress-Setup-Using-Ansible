@@ -15,4 +15,4 @@ ansible-playbook site.yml
    - **php:-**      For setting up php-fpm
    - **nginx:-**   
    - **wordpress:-**   Downloading wordpress and changing its wp-config.php
-   - **ssh_keys:-**   If you have multiple users, then define ***users*** and their ***id_rsa.pub*** in ssh_keys/tasks/main.yml                        and it will copy their keys in ***authorized_keys*** file on server   
+   - **ssh_keys:-**   If you have multiple users, then define ***user names*** and their path of their ***id_rsa.pub*** in ssh_keys/tasks/main.yml and it will copy their keys in ***authorized_keys*** file on server   
